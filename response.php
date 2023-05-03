@@ -3,6 +3,7 @@
     $censorship = $_GET['badWord'];
     $badWord = "***";
     $sentence_replace = str_replace($censorship, $badWord, $sentence);
+    $sentence_length = strlen($sentence);
 ?>
 
 <!DOCTYPE html>
@@ -14,14 +15,22 @@
     <title>Censorship</title>
 </head>
 <body>
-    <h2>Oppressive government version</h2>
+    <h1>Oppressive government version</h1>
    
-    <span>
+    <p style="font-size: 2rem">
         Il testo corretto è: "
         <?php 
             echo $sentence_replace;
         ?>
         "
-    </span>
+    </p>
+
+    <p style="font-size: 2rem">
+        Il testo è lungo: 
+        <?php
+            echo $sentence_length;
+        ?>
+        caratteri
+    </p>
 </body>
 </html>

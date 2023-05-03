@@ -8,7 +8,7 @@
 </head>
 <body>
     <form action="response.php" method="GET">
-        <h2>>Inserire testo</h2>
+        <h1>>Inserire testo</h1>
         <label for="sentence"></label>
         <textarea cols="30" rows="10" id="sentence" name="sentence"></textarea>
 
