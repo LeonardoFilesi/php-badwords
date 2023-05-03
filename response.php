@@ -1,7 +1,8 @@
 <?php
     $sentence = $_GET['sentence'];
-    $badWord = $_GET['badWord'];
-    $sentence_replace = str_replace($badWord, '***', $sentence);
+    $censorship = $_GET['badWord'];
+    $badWord = "***";
+    $sentence_replace = str_replace($censorship, $badWord, $sentence);
 ?>
 
 <!DOCTYPE html>
